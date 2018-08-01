@@ -26,5 +26,4 @@ class BaseSpider(scrapy.Spider):
                 gen = cls.parse(cls, response)
                 for x in gen:
                     yield x
-            else:
-                print('未找到【%s】对应的解析函数' % name)
+                    
